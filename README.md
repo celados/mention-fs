@@ -6,7 +6,7 @@ Fast, reusable filesystem mention search extracted from Grok's persistent fuzzy-
 
 ## Install in OMP
 
-Prerequisites: Bun, Rust, Cargo, and SSH access to the private GitHub repository.
+Prerequisites: OMP and SSH access to the private GitHub repository. The current plugin package includes a macOS arm64 binary.
 
 ```bash
 omp plugin install git+ssh://git@github.com/celados/mention-fs.git
@@ -84,7 +84,7 @@ bun run ready
 
 `bun run ready` runs Vite+ formatting, linting and type checks, TypeScript package tests, Rust tests, and workspace builds.
 
-The OMP plugin install path runs the root `prepare` script, which builds the optimized Rust daemon at `target/release/mention-fs` before OMP validates the extension entry.
+`extension.ts` selects the packaged binary for the current platform. Run `bun run build:binary` before refreshing `bin/mention-fs-darwin-arm64` or adding another platform build.
 
 ## Source
 

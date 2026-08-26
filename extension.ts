@@ -5,7 +5,9 @@ import {
 } from "./packages/pi-provider/src/index.ts";
 
 const install = createOmpMentionFsExtension({
-  binary: fileURLToPath(new URL("./target/release/mention-fs", import.meta.url)),
+  binary: fileURLToPath(
+    new URL(`./bin/mention-fs-${process.platform}-${process.arch}`, import.meta.url),
+  ),
   settle: "complete",
 });
 

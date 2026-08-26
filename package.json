@@ -1,6 +1,6 @@
 {
   "name": "mention-fs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -9,8 +9,9 @@
   "scripts": {
     "ready": "vp check && vp run -r test && cargo test --workspace && cargo build --workspace",
     "build": "cargo build --workspace && vp run -r build",
+    "build:binary": "cargo build --release --bin mention-fs",
     "test": "cargo test --workspace && vp run -r test",
-    "prepare": "vp config && cargo build --release --bin mention-fs"
+    "prepare": "vp config"
   },
   "dependencies": {
     "valibot": "^1.4.2"
