@@ -1,0 +1,16 @@
+[workspace]
+members = ["crates/mention-fs-core", "crates/mention-fs-daemon"]
+resolver = "2"
+
+[workspace.package]
+edition = "2024"
+license = "Apache-2.0"
+version = "0.1.0"
+
+[workspace.dependencies]
+ignore = "0.4"
+nucleo = { git = "https://github.com/helix-editor/nucleo.git", rev = "5b74652" }
+serde = { version = "1", features = ["derive", "rc"] }
+serde_json = "1"
+tempfile = "3"
+tracing = "0.1"

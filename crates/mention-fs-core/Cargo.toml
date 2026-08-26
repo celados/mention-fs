@@ -1,0 +1,15 @@
+[package]
+name = "mention-fs-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Streaming fuzzy filesystem source for mention providers"
+
+[dependencies]
+ignore.workspace = true
+nucleo.workspace = true
+serde.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

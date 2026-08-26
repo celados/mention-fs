@@ -1,0 +1,15 @@
+[package]
+name = "mention-fs-daemon"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "JSONL transport for mention-fs-core"
+
+[[bin]]
+name = "mention-fs"
+path = "src/main.rs"
+
+[dependencies]
+mention-fs-core = { path = "../mention-fs-core" }
+serde.workspace = true
+serde_json.workspace = true

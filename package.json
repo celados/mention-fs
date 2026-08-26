@@ -1,0 +1,45 @@
+{
+  "name": "mention-fs",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "ready": "vp check && vp run -r test && cargo test --workspace && cargo build --workspace",
+    "build": "cargo build --workspace && vp run -r build",
+    "test": "cargo test --workspace && vp run -r test",
+    "prepare": "vp config && cargo build --release --bin mention-fs"
+  },
+  "dependencies": {
+    "valibot": "^1.4.2"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.0",
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "overrides": {
+    "vite": "catalog:"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "bun",
+      "version": "1.4.0",
+      "onFail": "download"
+    }
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "catalog": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@0.2.4",
+    "vite-plus": "0.2.4"
+  },
+  "omp": {
+    "extensions": [
+      "./extension.ts"
+    ]
+  }
+}
