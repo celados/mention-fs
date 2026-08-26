@@ -6,10 +6,10 @@ Fast, reusable filesystem mention search extracted from Grok's persistent fuzzy-
 
 ## Install in OMP
 
-Prerequisites: Bun, Rust, and Cargo.
+Prerequisites: Bun, Rust, Cargo, and SSH access to the private GitHub repository.
 
 ```bash
-omp plugin install github:celados/mention-fs
+omp plugin install git+ssh://git@github.com/celados/mention-fs.git
 ```
 
 Restart OMP, then type:
