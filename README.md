@@ -6,10 +6,10 @@ Fast, reusable filesystem mention search extracted from Grok's persistent fuzzy-
 
 ## Install in OMP
 
-Prerequisites: OMP and SSH access to the private GitHub repository. The current plugin package includes a macOS arm64 binary.
+Prerequisites: OMP.
 
 ```bash
-omp plugin install git+ssh://git@github.com/celados/mention-fs.git
+omp plugin install https://github.com/celados/mention-fs.git
 ```
 
 Restart OMP, then type:
