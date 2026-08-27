@@ -2,6 +2,7 @@
   "name": "mention-fs",
   "version": "0.1.1",
   "private": true,
+  "license": "Apache-2.0",
   "workspaces": [
     "packages/*"
   ],
