@@ -1,0 +1,13 @@
+mention-fs
+Copyright 2026 Celados contributors.
+
+This project includes portions adapted from xai-org/grok-build's
+xai-fuzzy-file-search crate and persistent file-search state model:
+https://github.com/xai-org/grok-build
+
+The adapted portions retain the upstream copyright attribution:
+Copyright 2023-2026 SpaceXAI.
+
+The adapted code was extracted and modified for mention-fs's reusable daemon,
+streaming client, and OMP provider interfaces. It is distributed under the
+Apache License, Version 2.0; see LICENSE.

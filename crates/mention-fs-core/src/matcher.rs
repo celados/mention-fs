@@ -1,3 +1,8 @@
+// Portions of this matcher are adapted from xai-org/grok-build's
+// xai-fuzzy-file-search crate. This file has been substantially extracted
+// and modified for mention-fs's daemon and streaming client interfaces.
+// Copyright 2023-2026 SpaceXAI.
+
 //! Fuzzy file search over a directory tree.
 //!
 //! An `ignore` walk feeds paths into a `nucleo` matcher; [`FuzzyFileMatcher`]
