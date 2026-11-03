@@ -27,3 +27,6 @@ dist-ssr
 
 # AI agent worktrees
 .claude/worktrees/
+
+# Vite config bundling temp files
+vite.config.*.timestamp-*
